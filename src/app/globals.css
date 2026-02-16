@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* === Couleurs Officielles EDUCA === */
+:root {
+  --educa-blue: #013486;
+  --educa-orange: #F35403;
+  --educa-green: #43a047;
+  --educa-red: #e53935;
+}
+
+/* Classes utilitaires personnalisées */
+.bg-educa-blue {
+  background-color: var(--educa-blue);
+}
+
+.bg-educa-orange {
+  background-color: var(--educa-orange);
+}
+
+.text-educa-blue {
+  color: var(--educa-blue);
+}
+
+.text-educa-orange {
+  color: var(--educa-orange);
+}
+
+
+
+/* Scroll premium invisible */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: #F35403;
+}
+
+
+
+/* Animation alerte moyenne basse */
+@keyframes pulse-danger {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.animate-pulse-danger {
+  animation: pulse-danger 2s ease-in-out infinite;
+}
+
+@import "react-datepicker/dist/react-datepicker.css";
+
+/* Style premium calendrier */
+.react-datepicker {
+  border-radius: 16px !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+  font-family: inherit !important;
+}
+
+.react-datepicker__header {
+  background-color: #013486 !important;
+  border-bottom: none !important;
+}
+
+.react-datepicker__current-month {
+  color: white !important;
+  font-weight: 600;
+}
