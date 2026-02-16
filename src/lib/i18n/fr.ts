@@ -1175,6 +1175,467 @@ export const fr = {
     requiredField: "Champ obligatoire",
   },
 
+  /* ================= CLASSES PAGE ================= */
+  classesPage: {
+    /* --- stats --- */
+    totalClasses: "Total classes",
+    totalStudents: "Total élèves",
+    avgStudentsPerClass: "Moy. élèves/classe",
+    classesWithTeacher: "Classes avec titulaire",
+    avgClassAverage: "Moyenne générale",
+    attendanceRate: "Taux de présence",
+    passRate: "Taux de réussite",
+
+    /* --- charts --- */
+    studentDistribution: "Répartition des élèves",
+    performanceByClass: "Performance par classe",
+    levelDistribution: "Répartition par niveau",
+    attendanceByClass: "Présence par classe",
+
+    /* --- filters --- */
+    filterTitle: "Filtrer les classes",
+    allLevels: "Tous les niveaux",
+    allSections: "Toutes les sections",
+    allStatuses: "Tous les statuts",
+    allShifts: "Tous les horaires",
+    searchPlaceholder: "Rechercher par nom, code ou titulaire...",
+    reset: "Réinitialiser",
+    result: "résultat",
+    results: "résultats",
+    shiftMorning: "Matin",
+    shiftAfternoon: "Après-midi",
+    shiftFull: "Journée complète",
+
+    /* --- statuses --- */
+    statusActive: "Actif",
+    statusInactive: "Inactif",
+    statusFull: "Complet",
+    statusArchived: "Archivé",
+
+    /* --- export --- */
+    export: "Exporter",
+    exportPDF: "Exporter en PDF",
+    exportExcel: "Exporter en Excel",
+    exportCSV: "Exporter en CSV",
+    printList: "Imprimer la liste",
+
+    /* --- bulk --- */
+    selected: "sélectionnée(s)",
+    bulkAssignTeacher: "Assigner titulaire",
+    bulkChangeShift: "Changer l'horaire",
+    bulkExport: "Exporter",
+    bulkArchive: "Archiver",
+    bulkDelete: "Supprimer",
+
+    /* --- table columns --- */
+    colCode: "Code",
+    colClass: "Classe",
+    colLevel: "Niveau",
+    colSection: "Section",
+    colHomeroom: "Titulaire",
+    colStudents: "Élèves",
+    colCapacity: "Capacité",
+    colAverage: "Moyenne",
+    colAttendance: "Présence",
+    colShift: "Horaire",
+    colStatus: "Statut",
+    colActions: "Actions",
+
+    /* --- table actions --- */
+    viewDetails: "Voir les détails",
+    editClass: "Modifier la classe",
+    manageStudents: "Gérer les élèves",
+    viewSchedule: "Voir l'emploi du temps",
+    archiveClass: "Archiver la classe",
+    deleteClass: "Supprimer",
+    addNew: "Nouvelle classe",
+    addClass: "Ajouter une classe",
+
+    /* --- pagination --- */
+    showing: "Affichage de",
+    to: "à",
+    of: "sur",
+    perPage: "par page",
+
+    /* --- drawer tabs --- */
+    tabOverview: "Vue d'ensemble",
+    tabStudents: "Élèves",
+    tabTeachers: "Enseignants",
+    tabSchedule: "Emploi du temps",
+    tabGrades: "Notes",
+    tabActions: "Actions",
+
+    /* --- drawer overview --- */
+    classInfo: "Informations de la classe",
+    className: "Nom de la classe",
+    classCode: "Code",
+    level: "Niveau",
+    section: "Section",
+    shift: "Horaire",
+    room: "Salle de classe",
+    capacity: "Capacité",
+    enrolled: "Inscrits",
+    occupancy: "Taux d'occupation",
+    schoolYear: "Année scolaire",
+    createdAt: "Date de création",
+
+    /* --- drawer overview: homeroom teacher --- */
+    homeroomTeacher: "Professeur titulaire",
+    noHomeroom: "Aucun titulaire assigné",
+    assignTeacher: "Assigner un titulaire",
+    changeTeacher: "Changer le titulaire",
+    since: "Depuis",
+    specialty: "Spécialité",
+    contactTeacher: "Contacter",
+
+    /* --- drawer overview: class stats --- */
+    classStats: "Statistiques de la classe",
+    classAverage: "Moyenne de classe",
+    bestAverage: "Meilleure moyenne",
+    lowestAverage: "Moyenne la plus basse",
+    attendanceRateLabel: "Taux de présence",
+    absentToday: "Absents aujourd'hui",
+    lateToday: "En retard aujourd'hui",
+    disciplinaryIssues: "Problèmes disciplinaires",
+    passRateLabel: "Taux de réussite",
+
+    /* --- drawer overview: performance trend --- */
+    performanceTrend: "Tendance de performance",
+
+    /* --- drawer students tab --- */
+    enrolledStudents: "Élèves inscrits",
+    addStudent: "Ajouter un élève",
+    removeStudent: "Retirer",
+    studentName: "Nom",
+    studentAverage: "Moyenne",
+    studentAttendance: "Présence",
+    studentStatus: "Statut",
+    studentRank: "Rang",
+    viewProfile: "Voir le profil",
+    present: "Présent",
+    absent: "Absent",
+    late: "En retard",
+    noStudents: "Aucun élève inscrit dans cette classe",
+    topStudents: "Meilleurs élèves",
+    atRiskStudents: "Élèves à risque",
+
+    /* --- drawer teachers tab --- */
+    assignedTeachers: "Enseignants assignés",
+    addTeacherSubject: "Assigner un enseignant",
+    teacherName: "Nom",
+    teacherSubject: "Matière",
+    teacherHours: "Heures/semaine",
+    teacherEmail: "Email",
+    teacherPhone: "Téléphone",
+    noTeachers: "Aucun enseignant assigné",
+
+    /* --- drawer schedule tab --- */
+    weeklySchedule: "Emploi du temps hebdomadaire",
+    monday: "Lundi",
+    tuesday: "Mardi",
+    wednesday: "Mercredi",
+    thursday: "Jeudi",
+    friday: "Vendredi",
+    saturday: "Samedi",
+    timeSlot: "Créneau",
+    subject: "Matière",
+    teacher: "Enseignant",
+    roomLabel: "Salle",
+    noSchedule: "Aucun emploi du temps défini",
+
+    /* --- drawer grades tab --- */
+    gradesOverview: "Aperçu des notes",
+    subjectName: "Matière",
+    classAvg: "Moy. classe",
+    highestGrade: "Note max",
+    lowestGrade: "Note min",
+    coefficient: "Coeff.",
+    trimester1: "Trimestre 1",
+    trimester2: "Trimestre 2",
+    trimester3: "Trimestre 3",
+    generalAverage: "Moyenne générale",
+    noGrades: "Aucune note disponible",
+
+    /* --- drawer actions tab --- */
+    actionEditClass: "Modifier les informations",
+    actionEditClassDesc: "Modifier le nom, la section, la capacité et d'autres détails",
+    actionManageStudents: "Gérer les élèves",
+    actionManageStudentsDesc: "Ajouter, retirer ou transférer des élèves",
+    actionAssignTeacher: "Assigner des enseignants",
+    actionAssignTeacherDesc: "Gérer les enseignants et matières assignés",
+    actionSchedule: "Gérer l'emploi du temps",
+    actionScheduleDesc: "Configurer les créneaux horaires et matières",
+    actionExportGrades: "Exporter les notes",
+    actionExportGradesDesc: "Télécharger les bulletins et rapports",
+    actionExportAttendance: "Exporter les présences",
+    actionExportAttendanceDesc: "Télécharger le rapport de présence",
+    actionPrintRoster: "Imprimer la liste",
+    actionPrintRosterDesc: "Imprimer la liste des élèves de la classe",
+    actionArchive: "Archiver la classe",
+    actionArchiveDesc: "Archiver cette classe en fin d'année",
+    actionDelete: "Supprimer la classe",
+    actionDeleteDesc: "Supprimer définitivement cette classe",
+
+    /* --- modals --- */
+    addClassTitle: "Ajouter une nouvelle classe",
+    editClassTitle: "Modifier la classe",
+    fieldClassName: "Nom de la classe",
+    fieldClassCode: "Code de la classe",
+    fieldLevel: "Niveau",
+    fieldSection: "Section",
+    fieldShift: "Horaire",
+    fieldRoom: "Salle de classe",
+    fieldCapacity: "Capacité maximale",
+    fieldHomeroom: "Professeur titulaire",
+    fieldYear: "Année scolaire",
+    selectLevel: "Sélectionner un niveau",
+    selectSection: "Sélectionner une section",
+    selectShift: "Sélectionner un horaire",
+    selectTeacher: "Sélectionner un enseignant",
+    createClass: "Créer la classe",
+    updateClass: "Mettre à jour",
+
+    /* --- levels --- */
+    levelPreschool: "Préscolaire",
+    levelPrimary1: "1ère Année Fondamentale",
+    levelPrimary2: "2ème Année Fondamentale",
+    levelPrimary3: "3ème Année Fondamentale",
+    levelPrimary4: "4ème Année Fondamentale",
+    levelPrimary5: "5ème Année Fondamentale",
+    levelPrimary6: "6ème Année Fondamentale",
+    levelSecondary1: "7ème Année (NS1)",
+    levelSecondary2: "8ème Année (NS2)",
+    levelSecondary3: "9ème Année (NS3)",
+    levelSecondary4: "Rhéto (NS4)",
+    levelPhilo: "Philo",
+
+    /* --- confirm --- */
+    confirmArchive: "Êtes-vous sûr de vouloir archiver cette classe ?",
+    confirmArchiveDesc: "Cette action rendra la classe inactive. Les données seront conservées.",
+    confirmDelete: "Êtes-vous sûr de vouloir supprimer cette classe ?",
+    confirmDeleteDesc: "Cette action est irréversible. Toutes les données associées seront perdues.",
+    confirm: "Confirmer",
+  },
+
+  /* ================= SUBJECTS PAGE ================= */
+  subjectsPage: {
+    /* --- stats --- */
+    totalSubjects: "Total matières",
+    activeSubjects: "Matières actives",
+    totalTeachers: "Enseignants assignés",
+    avgHoursPerWeek: "Heures/semaine moy.",
+    avgCoefficient: "Coefficient moyen",
+    highestAvg: "Meilleure moyenne",
+    lowestAvg: "Moyenne la plus basse",
+
+    /* --- charts --- */
+    subjectsByDepartment: "Matières par département",
+    performanceBySubject: "Performance par matière",
+    hoursDistribution: "Répartition des heures",
+    coefficientDistribution: "Répartition des coefficients",
+
+    /* --- departments --- */
+    deptSciences: "Sciences",
+    deptLanguages: "Langues",
+    deptHumanities: "Sciences Humaines",
+    deptArts: "Arts & Culture",
+    deptTech: "Technologie",
+    deptPhysEd: "Éducation Physique",
+    deptAll: "Tous les départements",
+
+    /* --- filters --- */
+    filterTitle: "Filtrer les matières",
+    allDepartments: "Tous les départements",
+    allLevels: "Tous les niveaux",
+    allStatuses: "Tous les statuts",
+    searchPlaceholder: "Rechercher par nom, code ou enseignant...",
+    reset: "Réinitialiser",
+    result: "résultat",
+    results: "résultats",
+
+    /* --- statuses --- */
+    statusActive: "Actif",
+    statusInactive: "Inactif",
+    statusArchived: "Archivé",
+
+    /* --- export --- */
+    export: "Exporter",
+    exportPDF: "Exporter en PDF",
+    exportExcel: "Exporter en Excel",
+    exportCSV: "Exporter en CSV",
+    printList: "Imprimer la liste",
+
+    /* --- bulk --- */
+    selected: "sélectionnée(s)",
+    bulkChangeStatus: "Changer le statut",
+    bulkAssignTeacher: "Assigner enseignant",
+    bulkExport: "Exporter",
+    bulkDelete: "Supprimer",
+
+    /* --- table columns --- */
+    colCode: "Code",
+    colSubject: "Matière",
+    colDepartment: "Département",
+    colCoefficient: "Coeff.",
+    colHours: "Heures/sem.",
+    colTeachers: "Enseignants",
+    colClasses: "Classes",
+    colAverage: "Moyenne",
+    colStatus: "Statut",
+    colActions: "Actions",
+
+    /* --- table actions --- */
+    viewDetails: "Voir les détails",
+    editSubject: "Modifier la matière",
+    manageTeachers: "Gérer les enseignants",
+    viewProgram: "Voir le programme",
+    archiveSubject: "Archiver la matière",
+    deleteSubject: "Supprimer",
+    addNew: "Nouvelle matière",
+
+    /* --- pagination --- */
+    showing: "Affichage de",
+    to: "à",
+    of: "sur",
+    perPage: "par page",
+
+    /* --- drawer tabs --- */
+    tabOverview: "Vue d'ensemble",
+    tabProgram: "Programme",
+    tabTeachers: "Enseignants",
+    tabClasses: "Classes",
+    tabGrades: "Notes",
+    tabActions: "Actions",
+
+    /* --- drawer overview --- */
+    subjectInfo: "Informations de la matière",
+    subjectName: "Nom de la matière",
+    subjectCode: "Code",
+    department: "Département",
+    coefficient: "Coefficient",
+    hoursPerWeek: "Heures par semaine",
+    totalHoursYear: "Heures totales/an",
+    description: "Description",
+    objectives: "Objectifs pédagogiques",
+    schoolYear: "Année scolaire",
+    createdAt: "Date de création",
+    levelsCovered: "Niveaux couverts",
+
+    /* --- drawer overview: stats --- */
+    subjectStats: "Statistiques de la matière",
+    overallAverage: "Moyenne générale",
+    bestClassAvg: "Meilleure classe",
+    worstClassAvg: "Classe la plus faible",
+    passRate: "Taux de réussite",
+    totalStudents: "Total élèves",
+    totalExams: "Total évaluations",
+    avgExamScore: "Score moyen examen",
+    completionRate: "Taux de complétion",
+
+    /* --- drawer overview: performance trend --- */
+    performanceTrend: "Tendance de performance",
+
+    /* --- drawer program tab --- */
+    programTitle: "Programme scolaire",
+    noProgram: "Aucun programme défini",
+    trimester: "Trimestre",
+    trimester1: "Trimestre 1",
+    trimester2: "Trimestre 2",
+    trimester3: "Trimestre 3",
+    chapter: "Chapitre",
+    topic: "Sujet",
+    duration: "Durée",
+    status: "Statut",
+    completed: "Terminé",
+    inProgress: "En cours",
+    upcoming: "À venir",
+    hours: "heures",
+    addChapter: "Ajouter un chapitre",
+
+    /* --- drawer teachers tab --- */
+    assignedTeachers: "Enseignants assignés",
+    addTeacher: "Assigner un enseignant",
+    teacherName: "Nom",
+    teacherClasses: "Classes",
+    teacherHours: "Heures/sem.",
+    teacherEmail: "Email",
+    teacherPhone: "Téléphone",
+    teacherExperience: "Expérience",
+    noTeachers: "Aucun enseignant assigné",
+    yearsExp: "ans",
+    mainTeacher: "Titulaire",
+    substitute: "Suppléant",
+
+    /* --- drawer classes tab --- */
+    classesUsing: "Classes utilisant cette matière",
+    addClass: "Ajouter une classe",
+    className: "Classe",
+    classSection: "Section",
+    classTeacher: "Enseignant",
+    classHours: "Heures",
+    classAverage: "Moyenne",
+    noClasses: "Aucune classe assignée",
+
+    /* --- drawer grades tab --- */
+    gradesOverview: "Aperçu des notes",
+    byClass: "Par classe",
+    classLabel: "Classe",
+    classAvg: "Moy. classe",
+    highestGrade: "Note max",
+    lowestGrade: "Note min",
+    studentsAbove: "Au-dessus de 70",
+    studentsBelow: "En dessous de 50",
+    noGrades: "Aucune note disponible",
+    gradeDistribution: "Distribution des notes",
+    range0to30: "0-30",
+    range30to50: "30-50",
+    range50to70: "50-70",
+    range70to90: "70-90",
+    range90to100: "90-100",
+
+    /* --- drawer actions tab --- */
+    actionEditSubject: "Modifier les informations",
+    actionEditSubjectDesc: "Modifier le nom, le coefficient et d'autres détails",
+    actionManageProgram: "Gérer le programme",
+    actionManageProgramDesc: "Ajouter et organiser les chapitres du programme",
+    actionAssignTeacher: "Assigner des enseignants",
+    actionAssignTeacherDesc: "Gérer les enseignants qui enseignent cette matière",
+    actionAssignClasses: "Assigner des classes",
+    actionAssignClassesDesc: "Gérer les classes qui étudient cette matière",
+    actionExportGrades: "Exporter les notes",
+    actionExportGradesDesc: "Télécharger les rapports de notes par classe",
+    actionExportProgram: "Exporter le programme",
+    actionExportProgramDesc: "Télécharger le programme scolaire complet",
+    actionPrintSummary: "Imprimer le résumé",
+    actionPrintSummaryDesc: "Imprimer un résumé complet de la matière",
+    actionArchive: "Archiver la matière",
+    actionArchiveDesc: "Archiver cette matière en fin d'année",
+    actionDelete: "Supprimer la matière",
+    actionDeleteDesc: "Supprimer définitivement cette matière",
+
+    /* --- modals --- */
+    addSubjectTitle: "Ajouter une nouvelle matière",
+    editSubjectTitle: "Modifier la matière",
+    fieldName: "Nom de la matière",
+    fieldCode: "Code de la matière",
+    fieldDepartment: "Département",
+    fieldCoefficient: "Coefficient",
+    fieldHours: "Heures par semaine",
+    fieldDescription: "Description",
+    fieldObjectives: "Objectifs pédagogiques",
+    fieldLevels: "Niveaux applicables",
+    selectDepartment: "Sélectionner un département",
+    createSubject: "Créer la matière",
+    updateSubject: "Mettre à jour",
+
+    /* --- confirm --- */
+    confirmArchive: "Êtes-vous sûr de vouloir archiver cette matière ?",
+    confirmArchiveDesc: "Cette action rendra la matière inactive. Les données seront conservées.",
+    confirmDelete: "Êtes-vous sûr de vouloir supprimer cette matière ?",
+    confirmDeleteDesc: "Cette action est irréversible. Toutes les données associées seront perdues.",
+    confirm: "Confirmer",
+  },
+
   /* ================= COMMON ================= */
   common: {
     seeAll: "Voir tout",
