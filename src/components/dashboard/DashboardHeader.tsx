@@ -6,9 +6,11 @@ import { useState } from "react";
 import { CalendarDays } from "lucide-react";
 import AcademicCalendarModal from "@/components/dashboard/AcademicCalendarModal";
 import { useTranslation } from "@/lib/i18n/LanguageContext";
+import { useRouter } from "next/navigation";
 
 export default function DashboardHeader() {
   const { t } = useTranslation();
+  const router = useRouter();
   const firstName = mockUser.name.split(" ")[0];
   const [showCalendar, setShowCalendar] = useState(false);
 
@@ -64,7 +66,7 @@ export default function DashboardHeader() {
               {t.dashboard.calendar}
             </button>
 
-            <button className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#013486] bg-[#013486]/10 hover:bg-[#013486]/15 rounded-lg transition">
+            <button onClick={() => router.push("/admin/support")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#013486] bg-[#013486]/10 hover:bg-[#013486]/15 rounded-lg transition">
               <Headset size={14} />
               {t.dashboard.support}
             </button>

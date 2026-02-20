@@ -33,10 +33,11 @@ export const roleMenu: Record<UserRole, MenuItem[]> = {
     { labelKey: "menu.admin.schoolYear", path: "/admin/school-year" },
 
     { labelKey: "menu.admin.exams", path: "/admin/exams" },
+    { labelKey: "menu.admin.discipline", path: "/admin/discipline" },
     { labelKey: "menu.admin.performance", path: "/admin/performance" },
 
     { labelKey: "menu.admin.communication", path: "/admin/communication" },
-    { labelKey: "menu.admin.documents", path: "/admin/documents" },
+    { labelKey: "menu.admin.registrar", path: "/admin/registrar" },
 
     {
       labelKey: "menu.admin.services",
@@ -50,6 +51,7 @@ export const roleMenu: Record<UserRole, MenuItem[]> = {
       module: "ai",
     },
 
+    { labelKey: "menu.admin.support", path: "/admin/support" },
     { labelKey: "menu.admin.security", path: "/admin/security" },
     { labelKey: "menu.admin.settings", path: "/admin/settings" },
   ],
