@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { mockUser } from "@/lib/mockUser";
+import { useSession } from "@/lib/SessionContext";
 import { useTranslation } from "@/lib/i18n/LanguageContext";
 import {
   Menu,
@@ -36,7 +36,9 @@ const notifications = [
 
 export default function Navbar({ onToggleSidebar }: NavbarProps) {
   const { t } = useTranslation();
-  const roleKey = mockUser.role.toLowerCase() as "admin" | "teacher" | "student";
+  const { session, logout } = useSession();
+  const { user } = session;
+  const roleKey = user.role.toLowerCase() as "admin" | "teacher" | "student";
   const currentRole = t.roles[roleKey];
 
   const [openProfile, setOpenProfile] = useState(false);
@@ -180,12 +182,12 @@ export default function Navbar({ onToggleSidebar }: NavbarProps) {
               className="flex items-center gap-1.5 sm:gap-2 md:gap-3 px-1.5 sm:px-2 md:px-3 py-1.5 rounded-xl hover:bg-white/10 transition"
             >
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/20 flex items-center justify-center text-white font-semibold text-sm shrink-0">
-                {mockUser.name.charAt(0)}
+                {user.name.charAt(0)}
               </div>
 
               <div className="hidden md:block text-left min-w-0">
                 <p className="text-sm font-medium text-white truncate max-w-[140px] lg:max-w-[180px]">
-                  {mockUser.name}
+                  {user.name}
                 </p>
                 <p className="text-xs text-white/70">
                   {currentRole.title}
@@ -206,14 +208,14 @@ export default function Navbar({ onToggleSidebar }: NavbarProps) {
 
                 <div className="flex items-center gap-3 pb-4 border-b">
                   <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#013486] text-white flex items-center justify-center text-base sm:text-lg font-bold shrink-0">
-                    {mockUser.name.charAt(0)}
+                    {user.name.charAt(0)}
                   </div>
                   <div className="min-w-0">
                     <p className="font-semibold text-gray-800 truncate">
-                      {mockUser.name}
+                      {user.name}
                     </p>
                     <p className="text-sm text-gray-500 truncate">
-                      {mockUser.email}
+                      {user.email}
                     </p>
                     <div className="flex items-center gap-1 text-xs text-green-600 mt-1">
                       <Shield size={14} />
@@ -228,7 +230,10 @@ export default function Navbar({ onToggleSidebar }: NavbarProps) {
                     {t.nav.accountSettings}
                   </button>
 
-                  <button className="w-full flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-red-50 text-red-600 transition text-sm">
+                  <button
+                    onClick={logout}
+                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-red-50 text-red-600 transition text-sm"
+                  >
                     <LogOut size={16} />
                     {t.nav.logout}
                   </button>

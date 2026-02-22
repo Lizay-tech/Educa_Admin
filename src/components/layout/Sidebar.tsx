@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { roleMenu, resolveKey } from "@/lib/roleConfig";
-import { mockUser } from "@/lib/mockUser";
+import { useSession } from "@/lib/SessionContext";
 import { useTranslation } from "@/lib/i18n/LanguageContext";
 import { Search, Globe, LogOut, X } from "lucide-react";
 
@@ -16,7 +16,8 @@ type SidebarProps = {
 
 export default function Sidebar({ onClose }: SidebarProps) {
   const pathname = usePathname();
-  const menuItems = roleMenu[mockUser.role];
+  const { session, logout } = useSession();
+  const menuItems = roleMenu[session.user.role];
   const { t, locale, setLocale } = useTranslation();
 
   const toggleLang = () => setLocale(locale === "fr" ? "ht" : "fr");
@@ -128,7 +129,10 @@ export default function Sidebar({ onClose }: SidebarProps) {
           </span>
         </button>
 
-        <button className="flex items-center gap-3 text-sm hover:bg-[#F35403] px-3 py-2 rounded-xl transition">
+        <button
+          onClick={logout}
+          className="flex items-center gap-3 text-sm hover:bg-[#F35403] px-3 py-2 rounded-xl transition w-full"
+        >
           <LogOut size={16} />
           {t.sidebar.logout}
         </button>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Sidebar from "@/components/layout/Sidebar";
 import Navbar from "@/components/layout/Navbar";
+import { SessionProvider } from "@/lib/SessionContext";
 
 export default function AppLayout({
   children,
@@ -12,6 +13,7 @@ export default function AppLayout({
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
+    <SessionProvider>
     <div className="flex h-screen overflow-hidden">
       {/* Overlay mobile */}
       {sidebarOpen && (
@@ -45,5 +47,6 @@ export default function AppLayout({
         </main>
       </div>
     </div>
+    </SessionProvider>
   );
 }
