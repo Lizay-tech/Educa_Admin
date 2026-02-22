@@ -51,6 +51,16 @@
   background-color: #F35403;
 }
 
+/* Masquer complètement la scrollbar */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 /* Animation alerte moyenne basse */
